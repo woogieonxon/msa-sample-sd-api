@@ -1,6 +1,14 @@
 server:
   port: 8084
 
-config:
-  data1: "Container Platform"
-  data2: "Application Platform"
+spring:
+  datasource:
+    url: jdbc:mariadb://${DB_URL}/openlab?serverTimezone=Asia/Seoul&useSSL=false
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
