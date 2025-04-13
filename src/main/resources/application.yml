@@ -1,0 +1,6 @@
+server:
+  port: 8084
+
+config:
+  data1: "Container Platform"
+  data2: "Application Platform"
